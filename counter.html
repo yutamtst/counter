@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<HTML lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="counter_design.css">
+    <meta charset="UTF-8">
+    <title>
+        カウンター
+    </title>
+</head>
+<body>
+<h1 id="header">カウンター</h1>
+<h2 id="box">
+<div id="number">
+0
+</div>
+<br>
+    <div id="counter">
+        <button id="down">カウントダウン</button>
+        <button id="up">カウントアップ</button>
+    <script>
+        var up=document.getElementById("up");
+        var count = 0;
+        up.addEventListener("click", function(){
+            count +=1;
+            document.getElementById("number").innerHTML = count;
+        })
+        var down=document.getElementById("down");
+        down.addEventListener("click", function(){
+            count -=1;
+            document.getElementById("number").innerHTML=count;
+        })
+
+    </script>
+    </div>
+</h2>
+</body>
+</HTML>
